@@ -57,7 +57,7 @@ io.on("connection", async (socket) => {
 
     try {
       await newMessage.save();
-      // Broadcast to all except sender
+      // Broadcast to all except sender (sender adds locally)
       socket.broadcast.emit("message", data);
     } catch (err) {
       console.error("Error saving message:", err);
