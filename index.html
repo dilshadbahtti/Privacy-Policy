@@ -1,280 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator Pro - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #1E1E1E;
-            background-color: #FFFFFF;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        header {
-            border-bottom: 3px solid #1B5E20;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-        }
-        
-        h1 {
-            color: #1B5E20;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .app-name {
-            color: #FFD700;
-            font-weight: 700;
-        }
-        
-        .developer-info {
-            background-color: #F5F5F5;
-            padding: 15px;
-            border-left: 4px solid #FFD700;
-            margin-bottom: 30px;
-            border-radius: 4px;
-        }
-        
-        .developer-info p {
-            margin: 5px 0;
-            color: #2D2D2D;
-        }
-        
-        .developer-info strong {
-            color: #1B5E20;
-        }
-        
-        .developer-info a {
-            color: #1B5E20;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .developer-info a:hover {
-            color: #FFD700;
-        }
-        
-        section {
-            margin-bottom: 35px;
-        }
-        
-        h2 {
-            color: #1B5E20;
-            font-size: 1.6em;
-            margin-bottom: 15px;
-            margin-top: 25px;
-            border-bottom: 2px solid #FFD700;
-            padding-bottom: 8px;
-        }
-        
-        h3 {
-            color: #2D2D2D;
-            font-size: 1.1em;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        p {
-            margin-bottom: 12px;
-            color: #2D2D2D;
-            font-size: 0.95em;
-        }
-        
-        ol, ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            color: #2D2D2D;
-        }
-        
-        li strong {
-            color: #1B5E20;
-        }
-        
-        .highlight {
-            background-color: #FFF8F0;
-            padding: 20px;
-            border-radius: 5px;
-            border-left: 4px solid #FF9800;
-            margin: 20px 0;
-        }
-        
-        .highlight p {
-            margin: 0;
-            color: #2D2D2D;
-        }
-        
-        .contact-section {
-            background-color: #F0F8F0;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-            border-left: 4px solid #1B5E20;
-        }
-        
-        .contact-section h3 {
-            color: #1B5E20;
-            margin-top: 0;
-        }
-        
-        .contact-section p {
-            margin-bottom: 8px;
-        }
-        
-        .contact-section a {
-            color: #1B5E20;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .contact-section a:hover {
-            color: #FFD700;
-        }
-        
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #E0E0E0;
-            text-align: center;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .last-updated {
-            color: #999;
-            font-size: 0.85em;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilshad Networks &amp; Security — Networking, Surveillance &amp; Connectivity Systems</title>
+<meta name="description" content="IP &amp; analog CCTV, managed switching, ISP setup, fiber splicing, UBNT/Cambium wireless beam links, video intercom, fire alarm and Android development — Dera Ghazi Khan, Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --bg-alt: #F5F7FA;
+    --panel: #FBFCFD;
+    --line: #E2E8F0;
+    --text: #1A1A1A;
+    --muted: #5B6B7D;
+    --accent: #F4A94D;
+    --signal: #0D9488;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: inherit; text-decoration: none; }
+
+  .wrap{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  h1,h2,h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .mono{
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 1px 12px rgba(20,30,40,0.04);
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size: 1.15rem;
+  }
+
+  .brand-mark{
+    width: 30px; height: 30px;
+    border: 1.5px solid var(--signal);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .brand-mark::before{
+    content:'';
+    position:absolute;
+    top:50%; left:50%;
+    width:6px; height:6px;
+    background: var(--signal);
+    border-radius:50%;
+    transform: translate(-50%,-50%);
+  }
+  .brand-mark::after{
+    content:'';
+    position:absolute;
+    top:50%; left:50%;
+    width:16px; height:16px;
+    border:1px solid var(--signal);
+    border-radius:50%;
+    opacity:0.45;
+    transform: translate(-50%,-50%);
+  }
+
+  nav ul{
+    list-style:none;
+    display:flex;
+    gap: 36px;
+  }
+  nav ul a{
+    font-size: 0.92rem;
+    color: var(--muted);
+    transition: color .2s ease;
+  }
+  nav ul a:hover{ color: var(--text); }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding: 11px 22px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: background .2s ease, color .2s ease;
+    white-space: nowrap;
+  }
+  .btn:hover{ background: var(--accent); color: var(--bg); }
+
+  .btn-solid{
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .btn-solid:hover{ background: #ffbf70; }
+
+  .nav-cta{ display:flex; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding: 110px 0 90px;
+    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(ellipse 900px 500px at 85% 0%, rgba(95,225,201,0.08), transparent 60%);
+  }
+
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 60px;
+    align-items:center;
+  }
+
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color: var(--signal);
+    font-size: 0.82rem;
+    margin-bottom: 22px;
+  }
+  .eyebrow .dot{
+    width:6px; height:6px;
+    background: var(--signal);
+    border-radius:50%;
+    box-shadow: 0 0 0 3px rgba(95,225,201,0.18);
+  }
+
+  .hero h1{
+    font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+    line-height: 1.12;
+    max-width: 13ch;
+    margin-bottom: 24px;
+  }
+
+  .hero p{
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 46ch;
+    margin-bottom: 36px;
+  }
+
+  .hero-actions{
+    display:flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+  }
+
+  .hero-meta{
+    display:flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+  .hero-meta div span{
+    display:block;
+  }
+  .hero-meta .num{
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight:600;
+    color: var(--text);
+  }
+  .hero-meta .lbl{
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ---------- Signal diagram ---------- */
+  .signal-diagram{
+    position: relative;
+  }
+  .signal-diagram svg{ width:100%; height:auto; display:block; }
+
+  .node-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 10px;
+    fill: var(--muted);
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding: 96px 0; }
+  .section-alt{ background: var(--bg-alt); }
+
+  .section-head{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 56px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+  }
+  .section-head h2{
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    max-width: 16ch;
+  }
+  .section-head .tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--signal);
+    letter-spacing: 0.02em;
+  }
+  .section-head p{
+    color: var(--muted);
+    max-width: 40ch;
+    font-size: 0.95rem;
+  }
+
+  /* ---------- Services directory ---------- */
+  .service-row{
+    display:grid;
+    grid-template-columns: 90px 1fr 1.3fr;
+    gap: 28px;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    align-items: start;
+  }
+  .service-row:last-child{ border-bottom: 1px solid var(--line); }
+
+  .service-code{
+    font-family:'JetBrains Mono', monospace;
+    color: var(--signal);
+    font-size: 0.85rem;
+    padding-top: 3px;
+  }
+
+  .service-row h3{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .service-row p{
+    color: var(--muted);
+    font-size: 0.92rem;
+    max-width: 52ch;
+  }
+
+  /* ---------- Why strip ---------- */
+  .why-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .why-cell{
+    background: var(--bg);
+    padding: 36px 32px;
+  }
+  .why-cell h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--text);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .why-cell h3::before{
+    content:'';
+    width:8px; height:8px;
+    background: var(--accent);
+    flex-shrink:0;
+  }
+  .why-cell p{
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .contact-list{
+    display:flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .contact-item{
+    display:flex;
+    gap: 18px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--line);
+  }
+  .contact-item .k{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    width: 90px;
+    flex-shrink:0;
+    padding-top: 3px;
+  }
+  .contact-item .v{
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .contact-item .v a:hover{ color: var(--signal); }
+
+  .panel{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 40px;
+    box-shadow: 0 4px 24px rgba(20,30,40,0.06);
+  }
+  .panel h3{
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+  .panel p{
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-bottom: 28px;
+  }
+
+  .field{
+    margin-bottom: 18px;
+  }
+  .field label{
+    display:block;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .field input, .field textarea{
+    width:100%;
+    background: var(--bg-alt);
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 12px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    border-radius: 2px;
+  }
+  .field input:focus, .field textarea:focus{
+    outline: none;
+    border-color: var(--signal);
+  }
+  .field textarea{ min-height: 90px; resize: vertical; }
+
+  /* ---------- Footer ---------- */
+  footer{
+    border-top: 1px solid var(--line);
+    padding: 36px 0;
+  }
+  .footer-row{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-row p{
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+  .footer-row .fnav{
+    display:flex;
+    gap: 24px;
+  }
+  .footer-row .fnav a{
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+  .footer-row .fnav a:hover{ color: var(--signal); }
+
+  /* ---------- Motion ---------- */
+  @keyframes pulse-line{
+    0%   { stroke-dashoffset: 40; opacity: 0; }
+    15%  { opacity: 1; }
+    85%  { opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .pulse{ animation: none !important; }
+    html{ scroll-behavior: auto; }
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 880px){
+    .hero-grid{ grid-template-columns: 1fr; }
+    .signal-diagram{ order:-1; max-width: 360px; margin: 0 auto 20px; }
+    nav ul{ display:none; }
+    .why-grid{ grid-template-columns: 1fr; }
+    .contact-grid{ grid-template-columns: 1fr; }
+    .service-row{ grid-template-columns: 60px 1fr; }
+    .service-row p{ grid-column: 2 / 3; }
+    .hero-meta{ gap: 26px; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Privacy Policy</h1>
-            <p><span class="app-name">My Calculator Pro</span></p>
-        </header>
 
-        <div class="developer-info">
-            <p><strong>Developer:</strong> Muhammad Dilshad</p>
-            <p><strong>Contact Email:</strong> <a href="mailto:dilshadirshad599@gmail.com">dilshadirshad599@gmail.com</a></p>
-            <p><strong>Address:</strong> Rukan Abad Colony, Pul Dat, Dera Ghazi Khan, Pakistan</p>
-        </div>
-
-        <section>
-            <h2>Data Privacy</h2>
-            <p>At <span class="app-name">My Calculator Pro</span>, we respect your privacy and are committed to protecting your personal information. This privacy policy outlines how we handle your data when you use our application.</p>
-            
-            <h3>Local Data Storage</h3>
-            <p>All your calculations, saved results, and custom settings are stored <strong>locally on your own device</strong>. We do not have any external servers where your calculation history is kept. Your information remains under your complete control at all times.</p>
-        </section>
-
-        <section>
-            <h2>How to Request Data Deletion</h2>
-            <p>We understand that you may want to delete your data at any time. Below are the various methods you can use to remove your information from the app:</p>
-            
-            <h3>Method 1: Delete Specific Calculations</h3>
-            <p>Within the <span class="app-name">My Calculator Pro</span> app, you can delete individual saved calculations:</p>
-            <ol>
-                <li>Long-press on any saved calculation in your history</li>
-                <li>Select <strong>"Delete"</strong> from the context menu</li>
-                <li>Confirm the deletion when prompted</li>
-            </ol>
-            
-            <h3>Method 2: Clear All App Data</h3>
-            <p>To delete all your data at once, you can clear everything through your Android device settings:</p>
-            <ol>
-                <li>Open your phone's <strong>Settings</strong></li>
-                <li>Navigate to <strong>Apps</strong> or <strong>Application Manager</strong></li>
-                <li>Find and select <strong>My Calculator Pro</strong></li>
-                <li>Tap on <strong>Storage</strong></li>
-                <li>Select <strong>Clear Data</strong> or <strong>Clear Storage</strong></li>
-                <li>Confirm your action</li>
-            </ol>
-            <p class="highlight">
-                <strong>Note:</strong> This will permanently delete all calculation history and custom settings associated with the app.
-            </p>
-            
-            <h3>Method 3: Uninstall the App</h3>
-            <p>When you uninstall <span class="app-name">My Calculator Pro</span> from your device, Android automatically removes all local data associated with the app. Simply:</p>
-            <ol>
-                <li>Long-press the app icon on your home screen or app drawer</li>
-                <li>Select <strong>Uninstall</strong></li>
-                <li>Confirm the uninstallation</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Third-Party Services</h2>
-            
-            <h3>Google AdMob</h3>
-            <p><span class="app-name">My Calculator Pro</span> uses Google AdMob to display advertisements within the application. AdMob may use device identifiers for ad personalization and targeting purposes.</p>
-            
-            <h3>Firebase Crashlytics</h3>
-            <p>We use Google Firebase Crashlytics to monitor app stability and fix bugs. Crashlytics may collect device identifiers and crash data to help us improve the app's performance and reliability.</p>
-            
-            <h3>Managing Your Advertising ID</h3>
-            <p>You can manage or reset your Advertising ID at any time through your Android device settings:</p>
-            <ol>
-                <li>Open your phone's <strong>Settings</strong></li>
-                <li>Go to <strong>Google</strong> or <strong>Google Account</strong></li>
-                <li>Select <strong>Manage your Google Account</strong></li>
-                <li>Navigate to the <strong>Data & Privacy</strong> tab</li>
-                <li>Scroll to <strong>Ads & personalization</strong></li>
-                <li>Tap <strong>Manage your Google Ads settings</strong> to opt out or reset your ID</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Your Rights and Control</h2>
-            <p>You have full control over your data:</p>
-            <ul>
-                <li><strong>Local storage only:</strong> Your calculation data is never sent to our servers</li>
-                <li><strong>Delete anytime:</strong> Remove individual items or all data at your discretion</li>
-                <li><strong>No tracking:</strong> We do not track your personal behavior or location</li>
-                <li><strong>Advertising control:</strong> Manage your advertising preferences through Google settings</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Questions & Support</h2>
-            <div class="contact-section">
-                <h3>Contact Us</h3>
-                <p>If you have any questions, concerns, or need further assistance regarding your data privacy or data deletion in <span class="app-name">My Calculator Pro</span>, please don't hesitate to contact us directly:</p>
-                <p><strong>Email:</strong> <a href="mailto:dilshadirshad599@gmail.com">dilshadirshad599@gmail.com</a></p>
-                <p>We aim to respond to all inquiries within 48 hours.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Policy Updates</h2>
-            <p>We may update this privacy policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by updating the "Last Updated" date on this page.</p>
-        </section>
-
-        <footer>
-            <div class="last-updated">
-                <p>Last Updated: June 27, 2026</p>
-                <p>&copy; 2026 Muhammad Dilshad. All rights reserved.</p>
-            </div>
-        </footer>
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      Dilshad Networks &amp; Security
     </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-solid" href="#contact">Get a quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Dera Ghazi Khan, Pakistan</div>
+      <h1>Networks, security systems and wireless links, engineered right.</h1>
+      <p>We design and install the infrastructure that keeps buildings connected, monitored and online — from a single CCTV camera to a multi-kilometre wireless backbone.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="tel:+923326546239">Call now: 0332 6546239</a>
+        <a class="btn" href="#services">View services</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="num mono">08</span><span class="lbl">Core disciplines</span></div>
+        <div><span class="num mono">UBNT / CAM</span><span class="lbl">Wireless platforms</span></div>
+        <div><span class="num mono">IP + AHD</span><span class="lbl">Camera systems</span></div>
+      </div>
+    </div>
+
+    <div class="signal-diagram">
+      <svg viewBox="0 0 360 320" fill="none">
+        <!-- lines from hub to nodes -->
+        <line x1="180" y1="150" x2="70" y2="60" stroke="#E2E8F0" stroke-width="1.5"/>
+        <line x1="180" y1="150" x2="290" y2="55" stroke="#E2E8F0" stroke-width="1.5"/>
+        <line x1="180" y1="150" x2="55" y2="230" stroke="#E2E8F0" stroke-width="1.5"/>
+        <line x1="180" y1="150" x2="300" y2="240" stroke="#E2E8F0" stroke-width="1.5"/>
+        <line x1="180" y1="150" x2="180" y2="280" stroke="#E2E8F0" stroke-width="1.5"/>
+
+        <!-- pulsing traveling dots -->
+        <circle r="3" fill="#0D9488">
+          <animateMotion dur="2.6s" repeatCount="indefinite" path="M180,150 L70,60"/>
+          <animate attributeName="opacity" values="0;1;1;0" dur="2.6s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="3" fill="#0D9488">
+          <animateMotion dur="3.1s" begin="0.4s" repeatCount="indefinite" path="M180,150 L290,55"/>
+          <animate attributeName="opacity" values="0;1;1;0" dur="3.1s" begin="0.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="3" fill="#F4A94D">
+          <animateMotion dur="2.8s" begin="0.9s" repeatCount="indefinite" path="M180,150 L55,230"/>
+          <animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin="0.9s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="3" fill="#0D9488">
+          <animateMotion dur="3.4s" begin="1.3s" repeatCount="indefinite" path="M180,150 L300,240"/>
+          <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" begin="1.3s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="3" fill="#F4A94D">
+          <animateMotion dur="2.4s" begin="0.2s" repeatCount="indefinite" path="M180,150 L180,280"/>
+          <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.2s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- hub node -->
+        <circle cx="180" cy="150" r="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+        <circle cx="180" cy="150" r="16" fill="none" stroke="#0D9488" stroke-width="1" opacity="0.35"/>
+        <circle cx="180" cy="150" r="24" fill="none" stroke="#0D9488" stroke-width="1" opacity="0.18"/>
+
+        <!-- endpoint nodes -->
+        <circle cx="70" cy="60" r="5" fill="#FFFFFF" stroke="#7C8FA3" stroke-width="1.5"/>
+        <text x="70" y="42" text-anchor="middle" class="node-label">BEAM</text>
+
+        <circle cx="290" cy="55" r="5" fill="#FFFFFF" stroke="#7C8FA3" stroke-width="1.5"/>
+        <text x="290" y="37" text-anchor="middle" class="node-label">ISP</text>
+
+        <circle cx="55" cy="230" r="5" fill="#FFFFFF" stroke="#7C8FA3" stroke-width="1.5"/>
+        <text x="55" y="252" text-anchor="middle" class="node-label">CCTV</text>
+
+        <circle cx="300" cy="240" r="5" fill="#FFFFFF" stroke="#7C8FA3" stroke-width="1.5"/>
+        <text x="300" y="262" text-anchor="middle" class="node-label">SWITCH</text>
+
+        <circle cx="180" cy="280" r="5" fill="#FFFFFF" stroke="#7C8FA3" stroke-width="1.5"/>
+        <text x="180" y="302" text-anchor="middle" class="node-label">INTERCOM</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="tag mono">/ SERVICE DIRECTORY</div>
+        <h2 style="margin-top:10px;">What we install and maintain</h2>
+      </div>
+      <p>Eight disciplines, one point of contact — from cabling to configuration.</p>
+    </div>
+
+    <div class="service-list">
+      <div class="service-row">
+        <div class="service-code mono">SEC-01</div>
+        <h3>IP &amp; Analog CCTV</h3>
+        <p>Camera selection, placement and installation for IP and analog (AHD) systems, with remote viewing and recorder setup.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">NET-02</div>
+        <h3>Managed Switches</h3>
+        <p>VLAN segmentation, port configuration and traffic management for structured business and campus networks.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">ISP-03</div>
+        <h3>ISP Setup &amp; Network Infrastructure</h3>
+        <p>End-to-end internet connectivity setup, routing, and infrastructure planning for offices and residential buildings.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">FIB-04</div>
+        <h3>Fiber Optic Splicing</h3>
+        <p>Fusion splicing and testing for fiber runs, backbone links, and last-mile connections.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">RF-05</div>
+        <h3>Wireless Beam Links</h3>
+        <p>Point-to-point and point-to-multipoint wireless links using Ubiquiti (UBNT) and Cambium equipment for long-range, high-uptime connectivity.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">COM-06</div>
+        <h3>Video Intercom Systems</h3>
+        <p>Door entry and video intercom installation for residential and commercial access control.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">SAF-07</div>
+        <h3>Fire Alarm Systems</h3>
+        <p>Fire alarm panel and detector installation, wiring, and system testing for building safety compliance.</p>
+      </div>
+      <div class="service-row">
+        <div class="service-code mono">DEV-08</div>
+        <h3>Android Application Development</h3>
+        <p>Native Android apps built with Kotlin and Jetpack Compose — from concept through Play Store publishing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="section-alt">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom:none; margin-bottom:40px;">
+      <div>
+        <div class="tag mono">/ APPROACH</div>
+        <h2 style="margin-top:10px;">Why clients work with us</h2>
+      </div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-cell">
+        <h3>Single point of contact</h3>
+        <p>One team handles cabling, hardware, and software — no coordinating between separate vendors for networking, security, and connectivity.</p>
+      </div>
+      <div class="why-cell">
+        <h3>Hands-on technical depth</h3>
+        <p>Direct experience across IP networking, RF wireless links, fiber, and Android development — not a reseller relationship.</p>
+      </div>
+      <div class="why-cell">
+        <h3>Built for uptime</h3>
+        <p>Systems are configured with monitoring and maintainability in mind, so issues are caught before they cause downtime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="tag mono">/ CONTACT</div>
+        <h2 style="margin-top:10px;">Start a project</h2>
+      </div>
+      <p>Tell us about your site and what needs to go in — we'll follow up with next steps.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="k mono">PHONE</div>
+          <div class="v">
+            <a href="tel:+923326546239">0332 6546239</a> &nbsp;/&nbsp;
+            <a href="tel:+923346177882">0334 6177882</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="k mono">WHATSAPP</div>
+          <div class="v"><a href="https://wa.me/923326546239" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="k mono">EMAIL</div>
+          <div class="v"><a href="mailto:dilshadirshad599@gmail.com">dilshadirshad599@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="k mono">ADDRESS</div>
+          <div class="v">Yousaf Surgical Gali, Hospital Chowk, Main City, Dera Ghazi Khan</div>
+        </div>
+        <div class="contact-item">
+          <div class="k mono">GITHUB</div>
+          <div class="v"><a href="https://github.com/dilshadbhtti" target="_blank" rel="noopener">github.com/dilshadbhtti</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="k mono">SCOPE</div>
+          <div class="v">On-site installation across Dera Ghazi Khan and surrounding areas</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Send a project brief</h3>
+        <p>This form doesn't send automatically yet — connect it to your email or WhatsApp once the site is live.</p>
+        <form onsubmit="return false;">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label>Phone or email</label>
+            <input type="text" placeholder="How should we reach you">
+          </div>
+          <div class="field">
+            <label>What do you need installed?</label>
+            <textarea placeholder="e.g. CCTV for a 3-floor office, wireless link between two buildings..."></textarea>
+          </div>
+          <button class="btn btn-solid" style="width:100%; justify-content:center; border:none; cursor:pointer;">Send brief</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <p>&copy; 2026 Dilshad Networks &amp; Security — Networking, Surveillance &amp; Connectivity Systems.</p>
+    <div class="fnav">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
